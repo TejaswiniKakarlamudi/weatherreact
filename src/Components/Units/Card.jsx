@@ -1,5 +1,6 @@
 import { Typography } from "@mui/material";
-import styles from "../Units/Card.module.css"; // Assuming you have a CSS file for styles
+import "./Card.css"
+// import styles from "../Units/Card.module.css"; // Assuming you have a CSS file for styles
 const Card = ({ data }) => {
   const {
     location,
@@ -40,7 +41,7 @@ const Card = ({ data }) => {
   };
 
   return (
-    <div className={styles.mainCard}>
+    <div className="mainCard">
       <div>
         <Typography variant="h3" component="div" sx={locationStyle}>
           {location.name}, {location.country}
@@ -54,23 +55,23 @@ const Card = ({ data }) => {
           <img src={condition.icon} alt="Weather Icon" />
         </div>
       <div >
-        <div className={styles.cardContent}>
+        <div className="cardContent">
 
           {/* <h3>Weather in {location.name} is</h3> */}
 
-          <div className={styles.condition}>
+          <div className="weather-card">
             <h3>Temperature</h3>
             <p>{tempC}°C </p>
           </div>
-          <div className={styles.condition}>
+          <div className="weather-card">
             <h3>Humidity</h3>
             <p>{humidity}%</p>
           </div>
-          <div className={styles.condition}>
+          <div className="weather-card">
             <h3>Condition</h3>
             <p>{condition.text}</p>
           </div>
-          <div className={styles.condition}>
+          <div className="weather-card">
             <h3>Wind</h3>
             <p>Wind: {windKPH} kph</p>
           </div>
