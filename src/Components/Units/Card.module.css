@@ -1,0 +1,21 @@
+.mainCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.condition{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 2vw;
+    border-radius: 1vw;
+}
+
+.cardContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
