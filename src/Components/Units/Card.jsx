@@ -55,7 +55,7 @@ const Card = ({ data }) => {
           <img src={condition.icon} alt="Weather Icon" />
         </div>
       <div >
-        <div className="cardContent">
+        <div className="weather-cards">
 
           {/* <h3>Weather in {location.name} is</h3> */}
 
